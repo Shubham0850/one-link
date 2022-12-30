@@ -1,0 +1,9 @@
+/* Tailwind CSS imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// scss imports
+@import "./base";
+@import "./nav";
+@import "./header";

@@ -1,0 +1,107 @@
+.header {
+    &__container {
+        width: 100%;
+        margin-top: 130px;
+        padding: 100px 50px;
+        text-align: center;
+
+        @include center;
+    }
+
+    &__col {
+        @include center;
+    }
+
+    &__title {
+        font-size: 5rem;
+    }
+    .p {
+        font-size: 20px;
+        max-width: 70%;
+        margin: 20px auto;
+    }
+
+    &__search {
+        width: fit-content;
+        margin: 0 auto;
+        padding: 5px;
+        border-radius: 8px;
+        background-color: white;
+        @include center;
+
+        border: 1px solid rgb(224, 224, 224);
+    }
+
+    .reason {
+        font-family: $font-secondary;
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+
+.bg::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(25px); /* apply the blur */
+    pointer-events: none; /* make the overlay click-through */
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background: no-repeat;
+    background-image: url("https://img.freepik.com/premium-photo/royel-blue-gradiea-kit-website-background-web3-gradient-background-collection_203617-22.jpg");
+    background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        padding-top: 100px;
+    }
+}
+
+// featues
+.features {
+    padding: 50px 0;
+
+    span {
+        font-size: 50px;
+    }
+    p {
+        font-family: $font-secondary;
+        font-size: 20px;
+    }
+}
+
+// footer
+.footer {
+    padding: 50px 0;
+
+    &__links{
+        font-family: $font-secondary;
+    }
+
+    &__link{
+        font-family: $font-secondary;
+    }
+    &__icon{
+        font-size: 35px;
+    }
+    &__col{
+        @include center;
+    }
+    .text-right{
+        text-align: right;
+    }
+}
+
+.space-x-5 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
