@@ -1,12 +1,8 @@
-import Link from "next/link";
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import { BsTwitter, BsLinkedin, BsYoutube } from "react-icons/bs";
-import { AiFillInstagram } from "react-icons/ai";
 
-export default function Footer() {
+export default function Divider() {
   return (
-    <div className="footer">
+    <div>
       {/* wave line */}
       <svg
         width="100%"
@@ -140,67 +136,6 @@ export default function Footer() {
           </linearGradient>
         </defs>
       </svg>
-      <Container fluid className="cont mt-5">
-        <Row>
-          <Col sm={9}>
-            <div className="mb-5 flex items-center space-x-5">
-              <img src="/logo.png" alt="logo" width={"50px"} />
-
-              <span className="px-2">Your free personalised landing page</span>
-            </div>
-
-            <div className="footer__links flex space-x-5">
-              <Link href="#">
-                <span className="footer__link">Features</span>
-              </Link>
-              <Link href="#">
-                <span className="footer__link">Help center</span>
-              </Link>
-              <Link href="#">
-                <span className="footer__link">Term of uses</span>
-              </Link>
-              <Link href="#">
-                <span className="footer__link">Privacy policy</span>
-              </Link>
-              <Link href="#">
-                <span className="footer__link">Report</span>
-              </Link>
-            </div>
-          </Col>
-
-          <Col>
-            <Row>
-              <Col className="footer__col">
-                <span className="footer__icon">
-                  <BsTwitter />
-                </span>
-              </Col>
-              <Col className="footer__col">
-                <span className="footer__icon">
-                  <AiFillInstagram />
-                </span>
-              </Col>
-              <Col className="footer__col">
-                <span className="footer__icon">
-                  <BsLinkedin />
-                </span>
-              </Col>
-              <Col className="footer__col">
-                <span className="footer__icon">
-                  <BsYoutube />
-                </span>
-              </Col>
-              <Col className="footer__col">
-                <span className="footer__icon">
-                <img src="/logo.png" alt="logo" width={"35px"} />
-                </span>
-              </Col>
-            </Row>
-
-            <p className="p mt-[63px] text-right">© 2023-28 All right reserved by one-link.</p>
-          </Col>
-        </Row>
-      </Container>
     </div>
   );
 }

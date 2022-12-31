@@ -20,6 +20,13 @@ $font-secondary: "Poppins", sans-serif;
 }
 
 // TYPOGRAPHY
+.a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
 .h1 {
     font-family: $font-primary;
     font-size: 65px !important;
@@ -30,7 +37,7 @@ $font-secondary: "Poppins", sans-serif;
 }
 .h3 {
     font-family: $font-secondary;
-    font-size: 18px !important;
+    font-size: 25px !important;
 }
 .h2 {
 }
@@ -82,12 +89,17 @@ $font-secondary: "Poppins", sans-serif;
     }
 }
 
-.inp{
+.inp {
     outline: none;
     border: none;
     font-size: 20px;
     font-family: $font-secondary;
     padding: 5px 10px;
+}
+
+.sm-border {
+    // border: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 0;
 }
 
 @media only screen and (max-width: 600px) {

@@ -67,10 +67,11 @@
 
 // featues
 .features {
-    padding: 50px 0;
+    padding: 100px 0;
 
     span {
         font-size: 50px;
+        @include center;
     }
     p {
         font-family: $font-secondary;
@@ -84,10 +85,13 @@
 
     &__links{
         font-family: $font-secondary;
+       
     }
 
     &__link{
         font-family: $font-secondary;
+        color: #000;
+        text-decoration: none;
     }
     &__icon{
         font-size: 35px;
@@ -104,4 +108,36 @@
     --tw-space-x-reverse: 0;
     margin-right: calc(1.25rem * var(--tw-space-x-reverse));
     margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+// used by
+.used-by{
+    padding: 100px 0;
+
+    .col-1{
+        height: 400px;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .profile-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+// User ID
+.user-id{
+
+    &__bg{
+        width: 100%;
+        height: 30vh;
+
+        .bg-img{
+            width: 100%;
+            height: 30vh;
+            object-fit: cover;
+        }
+    }
 }

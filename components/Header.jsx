@@ -32,7 +32,7 @@ export default function Header() {
                 </div>
 
                 <p className="reason">
-                  {`it's free, secure, and takes less a minute`}
+                  {`it's free, secure, and takes less than a minute`}
                 </p>
               </div>
             </Col>

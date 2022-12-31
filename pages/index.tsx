@@ -3,6 +3,8 @@ import Nav from "../components/Nav"
 import Header from "../components/Header"
 import Features from "../components/Features"
 import Footer from "../components/Footer"
+import UsedBy from "../components/UsedBy"
+import DataPrivacy from "../components/DataPrivacy"
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
       <Nav />
       <Header />
       <Features />
+      <UsedBy />
+      <DataPrivacy />
       <Footer />
     </>
   )
