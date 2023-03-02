@@ -29,9 +29,9 @@ export default function UsedBy() {
         <Container fluid className="cont">
           <div className="text-center">
             <h1 className="text-5xl">
-              Trusted by <b>10M+</b>
+              Ready to serve <b>320M+ </b>
             </h1>
-            <h1 className="text-4xl">Developers</h1>
+            <h1 className="text-4xl">Active Crypto Users Worldwide</h1>
           </div>
         </Container>
 

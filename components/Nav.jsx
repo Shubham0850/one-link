@@ -28,11 +28,15 @@ export default function Nav() {
 
           <Col sm={0} md={6} className="nav__links hide-on-phone">
             <span className="nav__link">
-              <Link href="/roadmap">Roadmap</Link>
+              <Link href="#roadmap">Features</Link>
             </span>
 
             <span className="nav__link">
-              <Link href="/about-us">About Us</Link>
+              <Link href="#roadmap">Roadmap</Link>
+            </span>
+
+            <span className="nav__link">
+              <Link href="#about-us">About Us</Link>
             </span>
           </Col>
 
