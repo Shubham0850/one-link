@@ -27,7 +27,7 @@ const formReducer = (state, event) => {
   };
 };
 
-function form() {
+function LinkForm(props) {
   const [formData, setFormData] = useReducer(formReducer, {userID: "gulzari"});
   const [submitting, setSubmitting] = useState(false);
 
@@ -58,8 +58,8 @@ function form() {
   }, 3000);
 
   return (
-    <div className="wrapper">
-      <form onSubmit={handleSubmit}>
+    <>
+      <form onSubmit={handleSubmit} className="linkform">
         <fieldset>
           <div className="formDiv userid_Field">
             <label>
@@ -67,6 +67,9 @@ function form() {
                 <Col className="flex items-center justify-center">
                   <p className="text-xl m-0">Gulzari</p>
                   <BsFillPatchCheckFill className="ml-2 text-blue-500 text-xl" />
+                </Col>
+                <Col className="flex justify-right closebt" onClick={props.onClose}>
+                  X
                 </Col>
               </Row>
             </label>
@@ -232,10 +235,10 @@ function form() {
             </label>
           </div>
         </fieldset>
-        <button type="submit">Submit</button>
+        <button className="btns" type="submit">Save</button>
       </form>
-    </div>
+    </>
   );
 }
 
-export default form;
+export default LinkForm;

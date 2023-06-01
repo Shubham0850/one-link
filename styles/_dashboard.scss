@@ -1,0 +1,19 @@
+.dashboard{
+    padding: 1rem;
+    padding-top: 9rem;
+    &__mobilePreview{
+        background-color: #fff;
+        height: 546.588px;
+        width: 264.6px;
+        max-width: 294px;
+        max-height: 607.32px;
+        border: 11.34px solid #222222;
+        border-radius: 30.34px;
+        overflow: hidden;
+        margin: auto
+    }
+    iframe{
+        height: 100%;
+        width: 100%;
+    }
+}

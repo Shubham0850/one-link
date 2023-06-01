@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { connectMeta } from "../utils/walletConnect";
 
-export default function Nav() {
+export default function Nav(props) {
   const [wallet, setWallet] = useState(null);
 
   // new useEffect:
@@ -17,7 +17,7 @@ export default function Nav() {
   }, []);
 
   return (
-    <div className="nav">
+    <div className={`nav ${props.isLogin && "navLogin"}`}>
       <Container fluid >
         <Row className="nav__row">
           <Col md={3} className="nav__logo">

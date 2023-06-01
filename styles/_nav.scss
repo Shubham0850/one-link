@@ -43,7 +43,14 @@
     }
     border-bottom: 1px solid #000;
 }
+.navLogin{
+    padding: 15px !important;
+}
 
+.dashboard_nav{
+    width: 100%;
+    padding: 30px;
+}
 @media only screen and (max-width: 600px) {
     .nav {
         padding: 30px 0;
